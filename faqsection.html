@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Section - Opulent Oasis</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        .content {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h1 {
+            text-align: center;
+            color: purple;
+        }
+
+        .content h2 {
+            color: purple;
+            border-bottom: 2px solid purple;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+        }
+
+        .faq-item p {
+            margin: 5px 0;
+            color: #333;
+        }
+
+        .faq-item .question {
+            font-weight: bold;
+            color: purple;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+
+        .faq-item .answer {
+            display: none;
+            margin: 0;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        footer {
+            background-color: purple;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="main-menu">
+                <img src="./images/Hotel_logo2.jpg" alt="Hotel logo" height="50px">
+                <li class="logo"><a href="./index.html">Opulent Oasis</a></li>
+                <li>
+                    <a href="#">Room Booking</a>
+                    <ul class="sub-menu">
+                        <li><a href="./bookingform.html">Booking Form</a></li>
+                        <li><a href="./availabiltychecker.html">Availability Checker</a></li>
+                        <li><a href="./paymentintegration.html">Payment Integration</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Customer Services</a>
+                    <ul class="sub-menu">
+                        <li><a href="./livechat.html">Live Chat Support</a></li>
+                        <li><a href="./faqsection.html">FAQ Section</a></li>
+                        <li><a href="./ticketingsystem.html">Ticketing System</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Hotel Facilities</a>
+                    <ul class="sub-menu">
+                        <li><a href="./restaurant.html">Restaurant</a></li>
+                        <li><a href="./gym.html">Gym</a></li>
+                        <li><a href="./swimmingpool.html">Swimming Pool</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="content">
+        <h1>FAQ Section</h1>
+        <p>Welcome to our FAQ Section! Here, you can find answers to the most commonly asked questions about our hotel, booking process, facilities, and services.</p>
+        <div id="faq-list">
+          
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Opulent Oasis. All rights reserved.</p>
+    </footer>
+
+    <script>
+        
+        const faqs = [
+            {
+                question: "What time is check-in and check-out?",
+                answer: "Check-in is at 3:00 PM, and check-out is at 11:00 AM."
+            },
+            {
+                question: "Do you offer airport shuttle services?",
+                answer: "Yes, we offer complimentary airport shuttle services to and from the hotel."
+            },
+            {
+                question: "Can I modify or cancel my booking?",
+                answer: "Yes, you can modify or cancel your booking online or by contacting our customer service."
+            },
+            {
+                question: "What payment methods do you accept?",
+                answer: "We accept all major credit cards, including Visa, MasterCard, and American Express."
+            }
+        ];
+
+        
+        function generateFAQ() {
+            const faqList = document.getElementById('faq-list');
+            faqs.forEach(faq => {
+                const faqItem = document.createElement('div');
+                faqItem.classList.add('faq-item');
+                faqItem.innerHTML = `
+                    <p class="question">${faq.question}</p>
+                    <p class="answer">${faq.answer}</p>
+                `;
+                faqList.appendChild(faqItem);
+            });
+        }
+
+       
+        document.addEventListener('click', function(event) {
+            if (event.target.classList.contains('question')) {
+                const answer = event.target.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            }
+        });
+
+        
+        generateFAQ();
+    </script>
+</body>
+</html>

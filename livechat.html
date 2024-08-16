@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Chat Support - Opulent Oasis</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .content h1 {
+            text-align: center;
+            color: purple;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: purple;
+            margin-bottom: 20px;
+        }
+
+        .live-chat-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 300px;
+            background-color: purple;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            z-index: 1000;
+        }
+
+        .live-chat-widget h3 {
+            margin-top: 0;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .live-chat-widget p {
+            font-size: 14px;
+        }
+
+        .live-chat-widget button {
+            background-color: purple;
+            border: none;
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .live-chat-widget button:hover {
+            background-color: purple;
+        }
+
+        footer {
+            background-color: purple;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="main-menu">
+                <img src="./images/Hotel_logo2.jpg" alt="Hotel logo" height="50px">
+                <li class="logo"><a href="./index.html">Opulent Oasis</a></li>
+                <li>
+                    <a href="#">Room Booking</a>
+                    <ul class="sub-menu">
+                        <li><a href="./bookingform.html">Booking Form</a></li>
+                        <li><a href="./availabiltychecker.html">Availability Checker</a></li>
+                        <li><a href="./paymentintegration.html">Payment Integration</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Customer Services</a>
+                    <ul class="sub-menu">
+                        <li><a href="./livechat.html">Live Chat Support</a></li>
+                        <li><a href="./faqsection.html">FAQ Section</a></li>
+                        <li><a href="./ticketingsystem.html">Ticketing System</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Hotel Facilities</a>
+                    <ul class="sub-menu">
+                        <li><a href="./restaurant.html">Restaurant</a></li>
+                        <li><a href="./gym.html">Gym</a></li>
+                        <li><a href="./swimmingpool.html">Swimming Pool</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="content">
+        <h1>Live Chat Support</h1>
+        <p>Welcome to our Live Chat Support! Our customer service representatives are here to assist you 24/7. If you have any questions, need assistance with a booking, or have any other concerns, simply start a chat, and we’ll be happy to help.</p>
+        <p>Please ensure you have your booking reference number handy for a faster resolution of your queries. Our team is committed to providing you with prompt and efficient service.</p>
+    </section>
+
+    <div class="live-chat-widget">
+        <h3>Live Chat</h3>
+        <p>Our team is online and ready to assist you.</p>
+        <button onclick="startChat()">Start Chat</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Opulent Oasis. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function startChat() {
+           
+            alert("Chat feature is not yet implemented. Please check back later.");
+        }
+    </script>
+</body>
+</html>

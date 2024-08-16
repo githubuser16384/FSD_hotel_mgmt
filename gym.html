@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym - Opulent Oasis</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Gym Page Specific Styles */
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h1 {
+            text-align: center;
+            color: purple;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .gym-facilities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .gym-facility {
+            flex: 1 1 calc(50% - 20px);
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .gym-facility img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .gym-facility h3 {
+            color: purple;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: purple;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="main-menu">
+                <img src="./images/Hotel_logo2.jpg" alt="Hotel logo" height="50px">
+                <li class="logo"><a href="./index.html">Opulent Oasis</a></li>
+                <li>
+                    <a href="#">Room Booking</a>
+                    <ul class="sub-menu">
+                        <li><a href="./bookingform.html">Booking Form</a></li>
+                        <li><a href="./availabiltychecker.html">Availability Checker</a></li>
+                        <li><a href="./paymentintegration.html">Payment Integration</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Customer Services</a>
+                    <ul class="sub-menu">
+                        <li><a href="./livechat.html">Live Chat Support</a></li>
+                        <li><a href="./faqsection.html">FAQ Section</a></li>
+                        <li><a href="./ticketingsystem.html">Ticketing System</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Hotel Facilities</a>
+                    <ul class="sub-menu">
+                        <li><a href="./restaurant.html">Restaurant</a></li>
+                        <li><a href="./gym.html">Gym</a></li>
+                        <li><a href="./swimmingpool.html">Swimming Pool</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="content">
+        <h1>Our Gym</h1>
+        <p>Welcome to the Opulent Oasis gym, where luxury meets fitness. Our state-of-the-art gym is fully equipped with the latest fitness machines and free weights, providing everything you need for a comprehensive workout.</p>
+        <p>We offer a variety of exercise equipment, including treadmills, elliptical machines, stationary bikes, and a selection of free weights and resistance machines. For those seeking guidance, our certified personal trainers are available upon request.</p>
+        <p>The gym is open 24/7, ensuring that you can maintain your fitness routine at your convenience, whether you prefer an early morning workout or a late-night session.</p>
+
+        <div class="gym-facilities">
+            <div class="gym-facility">
+                <img src="./images/treadmill.jpg" alt="Treadmill">
+                <h3>Treadmills</h3>
+            </div>
+            <div class="gym-facility">
+                <img src="./images/weights.jpg" alt="Free Weights">
+                <h3>Free Weights</h3>
+            </div>
+            <div class="gym-facility">
+                <img src="./images/elliptical.jpg" alt="Elliptical Machines">
+                <h3>Elliptical Machines</h3>
+            </div>
+            <div class="gym-facility">
+                <img src="./images/stationary-bike.jpg" alt="Stationary Bikes">
+                <h3>Stationary Bikes</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Opulent Oasis. All rights reserved.</p>
+    </footer>
+</body>
+</html>

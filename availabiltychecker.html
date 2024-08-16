@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Availability Checker - Opulent Oasis</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h1 {
+            text-align: center;
+            color: purple;
+        }
+
+        .availability-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            color: purple;
+        }
+
+        .form-group input, .form-group select {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: purple;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            padding: 15px;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: purple;
+        }
+
+        .form-group input[type="submit"]:active {
+            background-color: purple;
+        }
+
+        footer {
+            background-color: purple;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="main-menu">
+                <img src="./images/Hotel_logo2.jpg" alt="Hotel logo" height="50px">
+                <li class="logo"><a href="./index.html">Opulent Oasis</a></li>
+                <li>
+                    <a href="#">Room Booking</a>
+                    <ul class="sub-menu">
+                        <li><a href="./bookingform.html">Booking Form</a></li>
+                        <li><a href="./availabiltychecker.html">Availability Checker</a></li>
+                        <li><a href="./paymentintegration.html">Payment Integration</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Customer Services</a>
+                    <ul class="sub-menu">
+                        <li><a href="./livechat.html">Live Chat Support</a></li>
+                        <li><a href="./faqsection.html">FAQ Section</a></li>
+                        <li><a href="./ticketingsystem.html">Ticketing System</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Hotel Facilities</a>
+                    <ul class="sub-menu">
+                        <li><a href="./restaurant.html">Restaurant</a></li>
+                        <li><a href="./gym.html">Gym</a></li>
+                        <li><a href="./swimmingpool.html">Swimming Pool</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="content">
+        <h1>Check Room Availability</h1>
+        <p>Use the form below to check the availability of our rooms for your preferred dates. We offer a range of luxurious rooms to suit your needs.</p>
+
+        <form class="availability-form" action="#" method="post">
+            <div class="form-group">
+                <label for="check-in-date">Check-In Date:</label>
+                <input type="date" id="check-in-date" name="check-in-date" required>
+            </div>
+            <div class="form-group">
+                <label for="check-out-date">Check-Out Date:</label>
+                <input type="date" id="check-out-date" name="check-out-date" required>
+            </div>
+            <div class="form-group">
+                <label for="room-type">Room Type:</label>
+                <select id="room-type" name="room-type" required>
+                    <option value="" disabled selected>Select a room type</option>
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                    <option value="suite">Suite</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Check Availability">
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Opulent Oasis. All rights reserved.</p>
+    </footer>
+</body>
+</html>

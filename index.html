@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management Platform - Opulent Oasis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="main-menu">
+                <img src="./images/Hotel_logo2.jpg" alt="Restaurant logo" height="50px">
+                <li class="logo"><a href="./index.html"> Opulent Oasis</a></li>
+                <li>
+                    <a href="#">Room Booking</a>
+                    <ul class="sub-menu">
+                        <li><a href="./bookingform.html">Booking Form</a></li>
+                        <li><a href="./availabiltychecker.html">Availability Checker</a></li>
+                        <li><a href="./paymentintegration.html">Payment Integration</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Customer Services</a>
+                    <ul class="sub-menu">
+                        <li><a href="./livechat.html">Live Chat Support</a></li>
+                        <li><a href="./faqsection.html">FAQ Section</a></li>
+                        <li><a href="./ticketingsystem.html">Ticketing System</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Hotel Facilities</a>
+                    <ul class="sub-menu">
+                        <li><a href="./restaurant.html">Restaurant</a></li>
+                        <li><a href="./gym.html">Gym</a></li>
+                        <li><a href="./swimmingpool.html">Swimming Pool</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to <span class="hotel-name">Opulent Oasis</span></h1>
+            <h2 class="tagline">Unveil the Pinnacle of Comfort</h2>
+            <p class="intro">
+                Nestled in the heart of a serene landscape, our hotel offers an exquisite blend of sophistication and relaxation. 
+                At Opulent Oasis, we pride ourselves on delivering unparalleled luxury, with elegantly appointed rooms, world-class amenities, and a dedicated team committed to making every moment unforgettable. 
+                From our opulent suites to our gourmet dining experiences, every detail is crafted to ensure your stay is nothing short of extraordinary. 
+                Discover a sanctuary where comfort meets elegance, and let us elevate your experience to new heights of indulgence.
+            </p>
+        </div>
+    </header>
+    
+    <section class="carousel">
+        <div class="slides">
+            <img src="./images/restaurant3.jpg" alt="Restaurant View 1">
+            <img src="./images/restaurant2.jpg" alt="Restaurant View 2">
+            <img src="./images/restaurant1.jpg" alt="Restaurant View 3">
+        </div>
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Contact Form -->
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <form action="#" method="post" class="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+                <p>Email: <a href="mailto:info@opulentoasis.com">info@opulentoasis.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+                <p>Address: 123 Luxury Lane, Elegance City, CA 12345</p>
+            </div>
+            <!-- Social Media Links -->
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#" class="social-icon">Facebook</a>
+                <a href="#" class="social-icon">Twitter</a>
+                <a href="#" class="social-icon">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Opulent Oasis. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
