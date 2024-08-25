@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Opulent Oasis</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        footer {
+    background-color: purple;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="main-menu">
+                <img src="./images/Hotel_logo2.jpg" alt="Hotel logo" height="50px">
+                <li class="logo"><a href="./index.html">Opulent Oasis</a></li>
+                <li>
+                    <a href="#">Room Booking</a>
+                    <ul class="sub-menu">
+                        <li><a href="./bookingform.html">Booking Form</a></li>
+                        <li><a href="./availabiltychecker.html">Availability Checker</a></li>
+                        <li><a href="./paymentintegration.html">Payment Integration</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Customer Services</a>
+                    <ul class="sub-menu">
+                        <li><a href="./livechat.html">Live Chat Support</a></li>
+                        <li><a href="./faqsection.html">FAQ Section</a></li>
+                        <li><a href="./ticketingsystem.html">Ticketing System</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Hotel Facilities</a>
+                    <ul class="sub-menu">
+                        <li><a href="./restaurant.html">Restaurant</a></li>
+                        <li><a href="./gym.html">Gym</a></li>
+                        <li><a href="./swimmingpool.html">Swimming Pool</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">More Services</a>
+                    <ul class="sub-menu">
+                        <li><a href="./contactus.html">Contact Us</a></li>
+                        <li><a href="./feedback.html">Feedback</a></li>
+                        <li><a href="./newsletter.html">Newsletter Subscription</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="content">
+        <center><h1>Feedback</h1></center>
+        <form action="#" method="post" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+            
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Opulent Oasis. All rights reserved.</p>
+    </footer>
+</body>
+</html>
